@@ -66,12 +66,6 @@ async function publishEssay(){
     alert("Publishing failed.");
   }
 }
-Click Commit changes.
+window.publishEssay = publishEssay;
 
-After that, the button will have the function it needs.
 
-Before you commit, I need one quick check: at the top of script.js, do you still see this line?
-
-const db = getFirestore(app);
-
-That line must be there for the publish function to talk to Firebase.
