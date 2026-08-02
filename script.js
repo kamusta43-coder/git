@@ -1,4 +1,19 @@
-// Midnight Writer Publishing System
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDph5CIVN17pPvUTakvHpSR3a0RCSkWNh0",
+  authDomain: "midnight-writer-website.firebaseapp.com",
+  projectId: "midnight-writer-website",
+  storageBucket: "midnight-writer-website.firebasestorage.app",
+  messagingSenderId: "980397906147",
+  appId: "1:980397906147:web:d56540ec3cfba8a4f64dd6"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
