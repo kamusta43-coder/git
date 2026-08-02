@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Midnight Writer | Personal Essays</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#050505;
+--card:#101010;
+--border:#252525;
+--text:#f4f4f4;
+--muted:#a0a0a0;
+--accent:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+font-family:Inter,sans-serif;
+line-height:1.8;
+}
+
+header{
+position:sticky;
+top:0;
+background:rgba(5,5,5,.92);
+backdrop-filter:blur(12px);
+border-bottom:1px solid var(--border);
+padding:22px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:100;
+}
+
+.logo{
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+font-weight:700;
+letter-spacing:2px;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:var(--muted);
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:white;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+}
+
+.hero h1{
+font-family:"Cormorant Garamond",serif;
+font-size:5.5rem;
+margin-bottom:20px;
+}
+
+.hero h2{
+font-weight:300;
+font-size:1.35rem;
+color:var(--muted);
+margin-bottom:35px;
+}
+
+.hero p{
+max-width:720px;
+color:#c7c7c7;
+font-size:1.1rem;
+margin-bottom:45px;
+}
+
+.button{
+display:inline-block;
+padding:16px 42px;
+border:1px solid white;
+text-decoration:none;
+color:white;
+transition:.35s;
+}
+
+.button:hover{
+background:white;
+color:black;
+}
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+font-family:"Cormorant Garamond",serif;
+font-size:3rem;
+margin-bottom:30px;
+}
+
+.about p{
+max-width:800px;
+color:#c2c2c2;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:var(--card);
+border:1px solid var(--border);
+padding:30px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#444;
+}
+
+.card h3{
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.card p{
+color:#b8b8b8;
+margin-bottom:20px;
+}
+
+.read{
+text-decoration:none;
+color:white;
+}
+
+blockquote{
+max-width:800px;
+margin:auto;
+font-family:"Cormorant Garamond",serif;
+font-size:2.2rem;
+text-align:center;
+font-style:italic;
+color:#ddd;
+}
+
+footer{
+padding:60px 20px;
+text-align:center;
+border-top:1px solid var(--border);
+color:#7f7f7f;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+.hero h1{
+font-size:3.4rem;
+}
+
+.hero h2{
+font-size:1.1rem;
+}
+
+.section-title{
+font-size:2.4rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Midnight Writer</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#essays">Essays</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Midnight Writer</h1>
+
+<h2>Personal Essays. Honest Reflections. Thoughts Written After Dark.</h2>
+
+<p>
+
+Welcome to Midnight Writer—a home for nonfiction writing rooted in memory,
+curiosity, and lived experience. These essays explore everyday moments,
+identity, growth, and the questions that stay with us long after midnight.
+
+</p>
+
+<a class="button" href="#essays">Read Essays</a>
+
+</section>
+
+<section id="about" class="about">
+
+<h2 class="section-title">About</h2>
+
+<p>
+
+Writing has always been my way of understanding the world. Every essay here is
+nonfiction—drawn from real experiences, observations, and conversations that
+have shaped my life. Midnight Writer is a quiet place for thoughtful readers
+who appreciate honesty more than certainty.
+
+</p>
+
+</section>
+
+<section id="essays">
+
+<h2 class="section-title">Featured Essays</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>The Weight of Ordinary Days</h3>
+<p>
+Finding meaning in routines that seem insignificant until we look closer.
+</p>
+<a class="read" href="#">Coming Soon →</a>
+</div>
+
+<div class="card">
+<h3>Learning to Listen</h3>
+<p>
+An essay about silence, attention, and what people reveal when we stop talking.
+</p>
+<a class="read" href="#">Coming Soon →</a>
+</div>
+
+<div class="card">
+<h3>After Midnight</h3>
+<p>
+Thoughts that arrive when the world is quiet enough to hear them.
+</p>
+<a class="read" href="#">Coming Soon →</a>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<blockquote>
+
+"Sometimes the clearest thoughts arrive after midnight."
+
+</blockquote>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p style="max-width:650px;color:#bbb;">
+
+Thank you for reading. If something you've read resonates with you, I'd love to
+hear from you. Future versions of this site will include a contact form and an
+email newsletter.
+
+</p>
+
+</section>
+
+<footer>
+
+<p><strong>Midnight Writer</strong></p>
+
+<p>Personal Essays & Reflections</p>
+
+<br>
+
+<p>© 2026 Midnight Writer. All rights reserved.</p>
+
+</footer>
+
+</body>
+</html>
+
+<a href="#essays">Essays</a>
+
+<a href="essays.html">Essays</a>
